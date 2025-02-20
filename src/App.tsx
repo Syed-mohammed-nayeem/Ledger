@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import SideNav from './components/SideNav';
-import Dashboard from './pages/Dashboard';
 import Customers from './pages/Customers';
 import CustomerAccounts from './pages/CustomerAccounts';
 import Admin from './pages/Admin';
@@ -35,7 +34,6 @@ const App: React.FC = () => {
         <div className={`content ${sidebarVisible ? 'shifted' : ''}`}>
           <Routes>
             <Route path="/" element={<Navigate to="/admin" replace />} />
-            {/* <Route path="/dashboard" element={<Dashboard />} /> */}
             <Route path="/customers" element={<Customers />} />
             <Route path="/accounts/:customerId" element={<CustomerAccounts />} />
             <Route path="/accounts/:customerId/:subCustomerId" element={<CustomerAccounts />} />
