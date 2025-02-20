@@ -1,0 +1,27 @@
+/* General layout for button container */
+.btn-container {
+    display: flex;
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Vertically align */
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Header styling */
+.subcustomers-header {
+    margin: 0;
+}
+
+/* Responsiveness for mobile screens */
+@media (max-width: 768px) {
+    .btn-container {
+        justify-content: flex-start; /* Align button to the left on mobile */
+        gap: 0.5rem;
+    }
+
+    .subcustomers-header {
+        flex-grow: 1;
+        text-align: left; /* Align header text to the left on mobile */
+    }
+}

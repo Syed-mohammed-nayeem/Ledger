@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    .p-sidebar-lg {
+        width: 250px;
+    }
+}
+
+.p-sidebar {
+    width: 250px;
+}
+
+.p-d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-sidebar .p-sidebar-header {
+    padding: 15px;
+}
+
+.p-button {
+    margin: 0 !important;
+    display: flex !important;
+    text-align: justify !important;
+}
+
+.p-sidebar .p-sidebar-header + .p-sidebar-content {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-sidebar-left .p-sidebar-sm, .p-sidebar-right .p-sidebar-sm {
+    width: 15rem !important;
+}

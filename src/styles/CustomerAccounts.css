@@ -1,0 +1,73 @@
+/* Make sure to import PrimeFlex in your project for the following styles to work */
+@import 'primeflex/primeflex.css';
+
+.align-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.align {
+    text-align: end;
+}
+
+.text-red-500 {
+    color: red;
+}
+
+.text-green-500 {
+    color: green;
+}
+
+.calendar-clear-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.small-messages {
+    font-size: 0.875rem;
+}
+
+.back-add-btn {
+    display: flex;
+    justify-content: space-between; /* Align buttons horizontally */
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Add margin to all buttons in the back-add-btn and calendar-clear-flex */
+.back-add-btn .p-button,
+.calendar-clear-flex .p-button {
+    margin: 0.5rem; /* Apply margin to all buttons */
+}
+
+/* Media query for small devices (mobile) */
+@media (max-width: 767px) {
+    .back-add-btn {
+        flex-direction: row;  /* Align buttons in a row on smaller screens */
+        gap: 0.5rem;          /* Reduce gap between buttons */
+    }
+
+    .back-add-btn .p-button {
+        width: auto; /* Reduce width of the "Add Amount" button */
+        margin-bottom: 0.5rem; /* Margin between buttons */
+    }
+
+    .align {
+        text-align: left;
+    }
+
+    .calendar-clear-flex {
+        flex-direction: row; /* Align calendar and clear button in a row */
+        gap: 0.5rem; /* Reduced gap between calendar and clear button */
+    }
+
+    .calendar-clear-flex .p-calendar {
+        width: 60%; /* Increase width of calendar */
+    }
+
+    .calendar-clear-flex .p-button {
+        width: 30%; /* Decrease width of the clear button */
+    }
+}

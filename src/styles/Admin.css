@@ -1,0 +1,57 @@
+/* Ensures button aligns to the right */
+.p-d-flex.p-jc-end {
+    width: 100%; /* Ensure the container takes full width */
+    justify-content: flex-end; /* Align button to the right */
+}
+
+/* For button container in general */
+.btn-container {
+    display: flex;
+    justify-content: flex-end; /* Align elements in the container to the right */
+    align-items: center;
+    width: 100%;
+}
+
+.search-container {
+    width: 30%;
+    margin-top: 1rem;
+}
+
+/* For smaller screens, adjust layout */
+@media screen and (max-width: 768px) {
+    .customers-header {
+        flex-direction: row;
+        justify-content: flex-end; /* Align header content to the right */
+        width: 100%;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+    
+    .p-button,
+    .table-actions .p-button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        white-space: nowrap;
+    }
+}
+
+/* Ensure the Net Total and Add Amount button are aligned correctly */
+.p-d-flex.p-jc-between.p-ai-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Ensure elements have proper spacing */
+  .p-d-flex.p-jc-between p h3 {
+    margin-right: 1rem; /* Add spacing between text and button */
+  }
+  

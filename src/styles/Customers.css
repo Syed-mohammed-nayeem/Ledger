@@ -1,0 +1,145 @@
+/* Overall container for padding */
+.container {
+    padding: 0.5rem; /* Reduced overall padding */
+}
+
+/* Header styling */
+.customers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem; /* Reduced bottom margin */
+}
+
+/* Search bar container */
+.search-container {
+    width: 30%;
+    margin-top: 0.5rem; /* Reduced top margin */
+}
+
+/* Search box */
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px; /* Reduced max width */
+    margin: 0 auto;
+}
+
+.p-inputgroup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem; /* Reduced padding */
+}
+
+/* Adjust button padding and font size */
+.p-button,
+.table-actions .p-button {
+    font-size: 0.8rem; /* Reduced font size */
+    padding: 0.3rem 0.6rem; /* Reduced padding */
+}
+
+/* Table action buttons */
+.table-actions {
+    display: flex;
+    gap: 8px; /* Reduced gap */
+    align-items: center;
+}
+
+/* Dialog button spacing */
+.dialog-buttons,
+.p-confirm-dialog .p-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; /* Reduced gap */
+    margin-top: 0.5rem; /* Reduced margin */
+}
+
+/* Responsive Design for Dialog */
+@media screen and (max-width: 1024px) {
+    /* Adjust search container width */
+    .search-container {
+        width: 40%;
+    }
+
+    /* Adjust dialog input size */
+    .p-dialog .p-inputtext {
+        font-size: 0.9rem; /* Smaller font size for dialog */
+        padding: 0.35rem 0.55rem; /* Adjust padding */
+    }
+
+    /* Dialog content alignment */
+    .p-dialog .p-field {
+        margin-bottom: 0.5rem; /* Reduced margin for dialog fields */
+    }
+
+    /* Adjust dialog button spacing */
+    .p-dialog .dialog-buttons {
+        gap: 10px; /* Slightly bigger gap for better clarity */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust layout */
+    .customers-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0.5rem; /* Reduced bottom margin */
+        gap: 1rem; /* Add a gap between the Customers text and Add Customer button */
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 0.25rem; /* Reduced top margin */
+    }
+
+    /* Adjust input box styling */
+    .p-inputtext {
+        font-size: 0.8rem; /* Reduced input size */
+        padding: 0.35rem 0.55rem; /* Reduced padding */
+    }
+
+    /* Reduce DataTable text size */
+    .p-datatable {
+        font-size: 0.8rem;
+    }
+
+    /* Ensure modal inputs remain compact */
+    .p-dialog .p-inputtext {
+        font-size: 0.8rem;
+        max-width: 100%;
+    }
+
+    /* Adjust modal actions spacing */
+    .p-dialog .flex {
+        gap: 0.4rem; /* Reduced gap between dialog actions */
+    }
+
+    /* Responsive Dialog */
+    .p-dialog {
+        width: 90%; /* Ensure dialog takes most of the screen width */
+        max-width: 350px; /* Limit max-width for smaller screens */
+    }
+
+    .dialog-buttons {
+        flex-direction: column; /* Stack buttons for small screens */
+        align-items: flex-start;
+        gap: 8px; /* Adjust gap for buttons */
+    }
+}
+
+/* Further optimizations for very small screens */
+@media screen and (max-width: 480px) {
+    .p-dialog {
+        width: 95%; /* Allow even more space for the dialog */
+        max-width: 100%; /* Ensure the dialog doesn't overflow */
+    }
+
+    .dialog-buttons {
+        gap: 6px; /* Smaller gap for buttons on very small screens */
+    }
+}

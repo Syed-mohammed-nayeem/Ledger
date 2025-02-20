@@ -1,0 +1,20 @@
+.input-container {
+    display: grid;
+    place-items: center;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+}
+
+.input-container input,
+.input-container .p-inputnumber {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.flex-btn {
+    display: flex;
+    gap: 15px;
+}
